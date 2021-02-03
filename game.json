@@ -1,0 +1,163 @@
+{
+    "passages": [
+      {
+        "text": "This is an open field west of a white house, with a boarded front door.\n\n[[Go North->North of House]]\n[[Go South->South of House]]\n[[Go West->Forest 1]]",
+        "links": [
+          {
+            "name": "Go North",
+            "link": "North of House",
+            "pid": "2"
+          },
+          {
+            "name": "Go South",
+            "link": "South of House",
+            "pid": "3"
+          },
+          {
+            "name": "Go West",
+            "link": "Forest 1",
+            "pid": "4"
+          }
+        ],
+        "name": "West of House",
+        "pid": "1",
+        "position": {
+          "x": "412",
+          "y": "189"
+        }
+      },
+      {
+        "text": "You are facing the north side of a white house. There is a door here, and all the windows are barred.\n\n[[Go West->West of House]] \n[[Go East->East of House]]\n[[Go North->Forest 3]]",
+        "links": [
+          {
+            "name": "Go West",
+            "link": "West of House",
+            "pid": "1"
+          },
+          {
+            "name": "Go East",
+            "link": "East of House",
+            "pid": "5"
+          },
+          {
+            "name": "Go North",
+            "link": "Forest 3",
+            "pid": "6"
+          }
+        ],
+        "name": "North of House",
+        "pid": "2",
+        "position": {
+          "x": "262",
+          "y": "339"
+        }
+      },
+      {
+        "text": "You are facing the south side of a white house. There is no door here, and all the windows are barred.\n\n[[Go East->East of House]] \n[[Go West->West of House]] \n[[Go South->Forest 2]]",
+        "links": [
+          {
+            "name": "Go East",
+            "link": "East of House",
+            "pid": "5"
+          },
+          {
+            "name": "Go West",
+            "link": "West of House",
+            "pid": "1"
+          },
+          {
+            "name": "Go South",
+            "link": "Forest 2",
+            "pid": "7"
+          }
+        ],
+        "name": "South of House",
+        "pid": "3",
+        "position": {
+          "x": "412",
+          "y": "339"
+        }
+      },
+      {
+        "text": "Double-click this passage to edit it.",
+        "name": "Forest 1",
+        "pid": "4",
+        "position": {
+          "x": "562",
+          "y": "339"
+        }
+      },
+      {
+        "text": "Behind House.\n\n[[Go North->North of House]] \n[[Go South->South of House]] \n[[Go East->Clearing]]\n[[Enter the House->Kitchen]]",
+        "links": [
+          {
+            "name": "Go North",
+            "link": "North of House",
+            "pid": "2"
+          },
+          {
+            "name": "Go South",
+            "link": "South of House",
+            "pid": "3"
+          },
+          {
+            "name": "Go East",
+            "link": "Clearing",
+            "pid": "8"
+          },
+          {
+            "name": "Enter the House",
+            "link": "Kitchen",
+            "pid": "9"
+          }
+        ],
+        "name": "East of House",
+        "pid": "5",
+        "position": {
+          "x": "187",
+          "y": "489"
+        }
+      },
+      {
+        "text": "Double-click this passage to edit it.",
+        "name": "Forest 3",
+        "pid": "6",
+        "position": {
+          "x": "337",
+          "y": "489"
+        }
+      },
+      {
+        "text": "Double-click this passage to edit it.",
+        "name": "Forest 2",
+        "pid": "7",
+        "position": {
+          "x": "457",
+          "y": "489"
+        }
+      },
+      {
+        "text": "Double-click this passage to edit it.",
+        "name": "Clearing",
+        "pid": "8",
+        "position": {
+          "x": "112",
+          "y": "639"
+        }
+      },
+      {
+        "text": "Double-click this passage to edit it.",
+        "name": "Kitchen",
+        "pid": "9",
+        "position": {
+          "x": "262",
+          "y": "639"
+        }
+      }
+    ],
+    "name": "Zork",
+    "startnode": "1",
+    "creator": "Twine",
+    "creator-version": "2.3.12",
+    "ifid": "1C98A297-9F5E-4E60-B200-758728B90F1E"
+  }
