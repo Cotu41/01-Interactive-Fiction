@@ -16,9 +16,11 @@
           {
             "name": "Go West",
             "link": "Forest 1",
-            "pid": "4"
+            "pid": "4",
+            "requires":"Sword"
           }
         ],
+        "inventory": ["Sword","Shield"],
         "name": "West of House",
         "pid": "1",
         "position": {
@@ -113,6 +115,7 @@
         ],
         "name": "East of House",
         "pid": "5",
+        "score": 10,
         "position": {
           "x": "187",
           "y": "489"
@@ -159,5 +162,9 @@
     "startnode": "1",
     "creator": "Twine",
     "creator-version": "2.3.12",
-    "ifid": "1C98A297-9F5E-4E60-B200-758728B90F1E"
+    "ifid": "1C98A297-9F5E-4E60-B200-758728B90F1E",
+    "scores":{
+      "Sword":10,
+      "Shield":20
+    }
   }
