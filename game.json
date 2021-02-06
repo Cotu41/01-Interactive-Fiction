@@ -1,170 +1,255 @@
 {
     "passages": [
       {
-        "text": "This is an open field west of a white house, with a boarded front door.\n\n[[Go North->North of House]]\n[[Go South->South of House]]\n[[Go West->Forest 1]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "North of House",
-            "pid": "2"
-          },
-          {
-            "name": "Go South",
-            "link": "South of House",
-            "pid": "3"
-          },
-          {
-            "name": "Go West",
-            "link": "Forest 1",
-            "pid": "4",
-            "requires":"Sword"
-          }
-        ],
-        "inventory": ["Sword","Shield"],
-        "name": "West of House",
-        "pid": "1",
-        "position": {
-          "x": "412",
-          "y": "189"
+      "text": "You emerge into a vast clearing, surrounded by the oppressive jungle you cut your way through to get there. Ahead of you are massive cliffs, and you feel a cool breeze echoing out of a large crevice- which marks the only way forward.\n\n\"This is where we part ways, pal.\", says your guide. \"I don't reckon my feet can take me much closer to that place.\" He tips his hat, and lights up a cigar on a nearby log after sweeping it clear of spiders using the brim of his cowboy hat.\n\n[[Go into Crevice -> Caves]]\n[[Inquire about Guide's Fear -> Clearing (Talking)]]\n",
+      "links": [
+        {
+          "name": "Go into Crevice ",
+          "link": " Caves",
+          "pid": "2"
+        },
+        {
+          "name": "Inquire about Guide's Fear ",
+          "link": " Clearing (Talking)",
+          "pid": "3"
         }
-      },
-      {
-        "text": "You are facing the north side of a white house. There is a door here, and all the windows are barred.\n\n[[Go West->West of House]] \n[[Go East->East of House]]\n[[Go North->Forest 3]]",
-        "links": [
-          {
-            "name": "Go West",
-            "link": "West of House",
-            "pid": "1"
-          },
-          {
-            "name": "Go East",
-            "link": "East of House",
-            "pid": "5"
-          },
-          {
-            "name": "Go North",
-            "link": "Forest 3",
-            "pid": "6"
-          }
-        ],
-        "name": "North of House",
-        "pid": "2",
-        "position": {
-          "x": "262",
-          "y": "339"
-        }
-      },
-      {
-        "text": "You are facing the south side of a white house. There is no door here, and all the windows are barred.\n\n[[Go East->East of House]] \n[[Go West->West of House]] \n[[Go South->Forest 2]]",
-        "links": [
-          {
-            "name": "Go East",
-            "link": "East of House",
-            "pid": "5"
-          },
-          {
-            "name": "Go West",
-            "link": "West of House",
-            "pid": "1"
-          },
-          {
-            "name": "Go South",
-            "link": "Forest 2",
-            "pid": "7"
-          }
-        ],
-        "name": "South of House",
-        "pid": "3",
-        "position": {
-          "x": "412",
-          "y": "339"
-        }
-      },
-      {
-        "text": "Double-click this passage to edit it.",
-        "name": "Forest 1",
-        "pid": "4",
-        "position": {
-          "x": "562",
-          "y": "339"
-        }
-      },
-      {
-        "text": "Behind House.\n\n[[Go North->North of House]] \n[[Go South->South of House]] \n[[Go East->Clearing]]\n[[Enter the House->Kitchen]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "North of House",
-            "pid": "2"
-          },
-          {
-            "name": "Go South",
-            "link": "South of House",
-            "pid": "3"
-          },
-          {
-            "name": "Go East",
-            "link": "Clearing",
-            "pid": "8"
-          },
-          {
-            "name": "Enter the House",
-            "link": "Kitchen",
-            "pid": "9"
-          }
-        ],
-        "name": "East of House",
-        "pid": "5",
-        "score": 10,
-        "position": {
-          "x": "187",
-          "y": "489"
-        }
-      },
-      {
-        "text": "Double-click this passage to edit it.",
-        "name": "Forest 3",
-        "pid": "6",
-        "position": {
-          "x": "337",
-          "y": "489"
-        }
-      },
-      {
-        "text": "Double-click this passage to edit it.",
-        "name": "Forest 2",
-        "pid": "7",
-        "position": {
-          "x": "457",
-          "y": "489"
-        }
-      },
-      {
-        "text": "Double-click this passage to edit it.",
-        "name": "Clearing",
-        "pid": "8",
-        "position": {
-          "x": "112",
-          "y": "639"
-        }
-      },
-      {
-        "text": "Double-click this passage to edit it.",
-        "name": "Kitchen",
-        "pid": "9",
-        "position": {
-          "x": "262",
-          "y": "639"
-        }
+      ],
+      "name": "Clearing",
+      "pid": "1",
+      "position": {
+        "x": "404",
+        "y": "170.5"
       }
+    },
+    {
+      "text": "IN \"JEWEL OF THE SERPENT TEMPLE\", SOME ANSWERS TO PUZZLES MAY BE HIDDEN. TRY TYPING IN ALTERNATE SOLUTIONS!\n YOU MAY ALSO SAY 'journal' TO CHECK YOUR NOTES AT A LOCATION.\n\nAs you enter the caves, you light a flare to guide your way.\n\nBasked in red light ahead of you is a massive stone face, bearing teeth and hollow eyes.\n\nIn front of the face is a pedestal with a rotary switch, adjourned with ancient symbols- all but weathered away by erosion.\n\n[[Approach Pedestal -> Pedestal]]",
+      "links": [
+        {
+          "name": "Approach Pedestal ",
+          "link": " Pedestal",
+          "pid": "5"
+        }
+      ],
+      "name": " Caves",
+      "pid": "2",
+      "position": {
+        "x": "329",
+        "y": "320.5"
+      }
+    },
+    {
+      "text": "Ahead of you are massive cliffs, and you feel a cool breeze echoing out of a large crevice- which marks the only way forward.\n\n\"Now, I ain't a superstitious man, but I know when I'm out of my depth, pard.\" The guide takes a long puff of his cigar. \"Back home when I was just big enough to cause some trouble, my pop told me: if you don't know the woods...\" His voice wavers ever so slightly. You swear you saw a glimmer of fear in his eyes as he looks down, breaking eye contact. \"...don't stray from the path. You wanna know my opinion? Turn back. It ain't worth it. You gotta know where you don't belong, not everything is meant to be seen.\"\n\n[[Go into Crevice -> Caves]]\n[[Go Home -> Home]]",
+      "links": [
+        {
+          "name": "Go into Crevice ",
+          "link": " Caves",
+          "pid": "2"
+        },
+        {
+          "name": "Go Home ",
+          "link": " Home",
+          "pid": "4"
+        }
+      ],
+      "name": " Clearing (Talking)",
+      "pid": "3",
+      "position": {
+        "x": "477",
+        "y": "318.5"
+      }
+    },
+    {
+      "text": "You make the decision to turn back as the guide advised.\n\nA twinge of regret hits your heart like a static shock in the final moments you look back at the cliffs, before you begin your long journey back to civilization.\n\nGAME OVER",
+      "name": " Home",
+      "pid": "4",
+      "position": {
+        "x": "477",
+        "y": "468.5"
+      }
+    },
+    {
+      "text": "You approach the pedestal.\n\nExamining the symbols, you see a port in the pedestal's center and retrieve the ancient key (you purchased at auction). It is inserted easily, but what now?\n\n[[Turn Key Clockwise -> Key Turn (Clockwise)]]\n[[Turn Key Counter-Clockwise -> Key Turn (Counter-Clockwise)]]\n\n[[Push -> Key (Push)]]",
+      "links": [
+        {
+          "name": "Turn Key Clockwise ",
+          "link": " Key Turn (Clockwise)",
+          "pid": "6"
+        },
+        {
+          "name": "Turn Key Counter-Clockwise ",
+          "link": " Key Turn (Counter-Clockwise)",
+          "pid": "7"
+        }
+        
+      ],
+      "hidden": [
+        {
+          "name": "Push ",
+          "link": " Key (Push)",
+          "pid": "8"
+        }
+      ],
+      "journal": "You pull out your journal to look for clues.\n\nFinally, you locate a page where you made a rubbing of the same symbols on the altar, and a sketch of the stone face that sits before you. This must be what it's referencing. With the sketch are translated texts: \n\n\"The holy cliffs belong only to the resolute. Entry is granted only for those who push forward and remain headstrong\"",
+      "name": " Pedestal",
+      "pid": "5",
+      "position": {
+        "x": "329",
+        "y": "470.5"
+      }
+    },
+    {
+      "text": "You turn the key, and spikes spring from the wall- killing you instantly.\n\nGAME OVER",
+      "name": " Key Turn (Clockwise)",
+      "pid": "6",
+      "position": {
+        "x": "179",
+        "y": "620.5"
+      }
+    },
+    {
+      "text": "You turn the key, and spikes spring from the walls, killing you instantly.\n\n\nGAME OVER",
+      "name": " Key Turn (Counter-Clockwise)",
+      "pid": "7",
+      "position": {
+        "x": "329",
+        "y": "620.5"
+      }
+    },
+    {
+      "text": "You push the key forward, and with a satisfying click, the grand teeth of the stone face slide open to reveal a massive, lush cave within the cliffs.\n\n[[Walk Inside -> Main Temple]]",
+      "links": [
+        {
+          "name": "Walk Inside ",
+          "link": " Main Temple",
+          "pid": "9"
+        }
+      ],
+      "name": " Key (Push)",
+      "pid": "8",
+      "position": {
+        "x": "479",
+        "y": "620.5"
+      }
+    },
+    {
+      "text": "Walking inside, the cave opens up around you. Beautiful flowers, lush vines, and waterfalls spring from the cave walls- which must be over 100 feet tall. In the center is a circular, grass-covered altar with statues of snakes surrounding it.\n\nA stream fed by the waterfalls wraps around the complex, running near to the altar and supporting the lives of countless little fish, which move in and out of tiny ponds.\n\n[[Approach Altar -> Altar]]\n[[Go to Stream -> Stream]]",
+      "links": [
+        {
+          "name": "Approach Altar ",
+          "link": " Altar",
+          "pid": "10"
+        },
+        {
+          "name": "Go to Stream ",
+          "link": " Stream",
+          "pid": "11"
+        }
+      ],
+      "name": " Main Temple",
+      "pid": "9",
+      "position": {
+        "x": "479",
+        "y": "770.5"
+      }
+    },
+    {
+      "text": "The altar stands resolute, gleaming under tiny beams of sunlight from high above. \n\nEmbedded in the center of the altar sits a jewel, which glows brilliantly in the natural light. \n\n[[Leave Altar -> Main Temple]]\n[[Pry out Jewel -> Prying Jewel]]\n[[Kneel -> Kneeling at Altar]]",
+      "links": [
+        {
+          "name": "Leave Altar ",
+          "link": " Main Temple",
+          "pid": "9"
+        },
+        {
+          "name": "Pry out Jewel ",
+          "link": " Prying Jewel",
+          "pid": "12"
+        },
+        {
+          "name": "Kneel ",
+          "link": " Kneeling at Altar",
+          "pid": "13"
+        }
+      ],
+      "journal": "\n\nThis is it. You reference your journal and sketches to make sure, but you have no doubt.\n\n\"The jewel and the land are one. You cannot remove the jewel without removing the land. Kneel not before the altar, but before the land. That is where the gods reside\"",
+      "name": " Altar",
+      "pid": "10",
+      "position": {
+        "x": "404",
+        "y": "920.5"
+      }
+    },
+    {
+      "text": "The stream is beautiful, filled with all sorts of life and babbling down into a small pond.\n\nIts fish flutter about serenely- not a care in the world. You are probably the first human these fish have ever seen.\n\n[[Walk Away -> Main Temple]]\n\n[[Kneel -> Kneeling at Stream]]",
+      "links": [
+        {
+          "name": "Walk Away ",
+          "link": " Main Temple",
+          "pid": "9"
+        }
+      ],
+      "hidden": [  
+        {
+          "name": "Kneel ",
+          "link": " Kneeling at Stream",
+          "pid": "14"
+        }
+        
+      ],
+      "name": " Stream",
+      "pid": "11",
+      "position": {
+        "x": "554",
+        "y": "920.5"
+      }
+    },
+    {
+      "text": "You stick your pocket knife into the tiny space between the jewel and its socket, but it doesn't budge at all. You knife begins to bend as you exert more and more force.\n\n[[Stop Trying -> Altar]]",
+      "links": [
+        {
+          "name": "Stop Trying ",
+          "link": " Altar",
+          "pid": "10"
+        }
+      ],
+      "name": " Prying Jewel",
+      "pid": "12",
+      "position": {
+        "x": "329",
+        "y": "1070.5"
+      }
+    },
+    {
+      "text": "You kneel down at the altar.\n\nAfter waiting a few minutes, you realize nothing is happening. You grow impatient.\n\n[[Stop Trying -> Altar]]",
+      "links": [
+        {
+          "name": "Stop Trying ",
+          "link": " Altar",
+          "pid": "10"
+        }
+      ],
+      "name": " Kneeling at Altar",
+      "pid": "13",
+      "position": {
+        "x": "479",
+        "y": "1070.5"
+      }
+    },
+    {
+      "text": "You kneel down, closing your eyes in the serenity of the stream.\n\nWhen you open them, a great glow surrounds you.\n\nA hum fills the air, as leaves and other particles begin falling upwards- floating in an ethereal blue glow.\n\nA bright light envelops you, and you awaken outside.\n\nAfter a day of walking, you finally locate your guide and start the long walk back to civilization.\n\nYOU SURVIVED",
+      "name": " Kneeling at Stream",
+      "pid": "14",
+      "position": {
+        "x": "599",
+        "y": "1070.5"
+      }
+    }
     ],
-    "name": "Zork",
+    "name": "Jewel of the Serpent Temple",
     "startnode": "1",
     "creator": "Twine",
     "creator-version": "2.3.12",
     "ifid": "1C98A297-9F5E-4E60-B200-758728B90F1E",
     "scores":{
-      "Sword":10,
-      "Shield":20
     }
   }

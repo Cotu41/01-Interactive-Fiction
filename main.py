@@ -4,14 +4,10 @@ assert sys.version_info >= (3,9), "This script requires at least Python 3.9"
 
 #synonym dictionary, if we are going to require the player to type in commands
 lookup = {
-    "north":"go north",
-    "south":"go south",
-    "west":"go west",
-    "east":"go east",
-    "n":"go north",
-    "s":"go south",
-    "w":"go west",
-    "e":"go east"
+    "push forward":"push",
+    "push in":"push",
+    "kneel down":"kneel",
+    "kneel at creek":"kneel"
 }
 #distinguish direction commands from other types-you could make as many of these as you want
 directions = {'go north','go south','go east','go west','go up','go down'}
@@ -55,6 +51,15 @@ def update_inventory(current,inventory,choice):
                 inventory.append(i)
     return inventory
 
+def update_journal(current, choice):
+    if choice == "journal":
+        if "journal" in current:
+            return current["journal"]
+        else:
+            return "You have no journal entry on this location."
+    else:
+        return ""
+
 # Score can be updated based on location or acquiring items in the inventory
 # looks for a "score" field in the location or a "score" dictionary in the game description
 def update_score(current,scores,inventory,score,locations,items):
@@ -71,11 +76,22 @@ def update(current,choice,game_desc,inventory):
         return current
     for l in current["links"]:
         if "requires" not in l or l["requires"] in inventory:
-            if l["name"].lower() == choice:
+            if l["name"].lower().strip() == choice:
                 current = find_passage(game_desc, l["pid"])
                 return current
+
+    if "hidden" in current:
+        for l in current["hidden"]:
+            if "requires" not in l or l["requires"] in inventory:
+                if l["name"].lower().strip() in choice: # check for contains instead of exact match
+                    current = find_passage(game_desc, l["pid"])
+                    return current
+
+
     if choice in directions:
         print("\nI don't know how to go that way. Please try again")
+    elif choice == "journal":
+        print("")
     else:
         print("\nI don't understand. Please try again.")
     return current
@@ -101,6 +117,7 @@ def render(current,score,moves,hp,inventory):
         print("\nYou see ")
         for i in current["inventory"]:
             print(i)
+    
     print("\n")
 
 # Normalizes user input: lowercase, remove whitespace, and look up in synonym dictionary
@@ -148,10 +165,11 @@ def main():
             last_location = current
 
         render(current,score,moves,hp,inventory)
-
+        print(update_journal(current, choice))
         # if the current location doesn't have an exit, quit
         if "links" in current:
             choice = get_input()
+            
         else:
             current = {}
     
