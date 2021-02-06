@@ -11,7 +11,7 @@ Python 3.9.1 and Twine 2 (Twison 0.0.1 format)
 Classic Zork
 
 ## Future Development
-Inventory and HP
+The Journal and Hidden Option mechanics
 
 ## Created by
-Jason Francis
+Baerett Stone
